@@ -25,6 +25,11 @@
   line-height: 1.5;
 }
 
+.headingSm {
+  font-size: 0.5rem;
+  line-height: 1.2;
+}
+
 .borderCircle {
   border-radius: 9999px;
 }
@@ -53,4 +58,16 @@
 
 .centerText {
   text-align: center;
+}
+
+.introText {
+  font-size: 1rem;
+}
+
+.orangeAnchor {
+  color: orange;
+}
+
+.redAnchor {
+  color: red;
 }
