@@ -3,6 +3,8 @@ import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
+import ReactMarkdown from "react-markdown";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -21,6 +23,10 @@ export async function getStaticProps({ params }) {
   };
 }
 
+const CodeBlock = ({ language, value }) => {
+  return <SyntaxHighlighter language={language}>{value}</SyntaxHighlighter>;
+};
+
 export default function Post({ postData }) {
   return (
     <Layout>
@@ -32,7 +38,11 @@ export default function Post({ postData }) {
         <div className={utilStyles.lightText}>
           <Date dateString={postData.date} />
         </div>
-        <div dangerouslySetInnerHTML={{ __html: postData.htmlContent }} />
+        <ReactMarkdown
+          source={postData.content}
+          allowDangerousHtml={false}
+          renderers={{ code: CodeBlock }}
+        />
       </article>
     </Layout>
   );
