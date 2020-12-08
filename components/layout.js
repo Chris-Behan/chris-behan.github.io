@@ -14,9 +14,7 @@ export default function Layout({ children, home }) {
         <meta name="description" content="Personal website of chris behan" />
         <meta
           property="og:image"
-          content={`https://og-image.now.sh/${encodeURI(
-            siteTitle
-          )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
+          content="https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/wpg.jpg"
         />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
@@ -32,23 +30,23 @@ export default function Layout({ children, home }) {
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
         ) : (
-          <>
-            <Link href="/">
-              <a>
-                <img
-                  src="/images/profile1.jpg"
-                  className={`${styles.headerImage} ${utilStyles.borderCircle}`}
-                  alt={name}
-                />
-              </a>
-            </Link>
-            <h2 className={utilStyles.headingLg}>
+            <>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a>
+                  <img
+                    src="/images/profile1.jpg"
+                    className={`${styles.headerImage} ${utilStyles.borderCircle}`}
+                    alt={name}
+                  />
+                </a>
               </Link>
-            </h2>
-          </>
-        )}
+              <h2 className={utilStyles.headingLg}>
+                <Link href="/">
+                  <a className={utilStyles.colorInherit}>{name}</a>
+                </Link>
+              </h2>
+            </>
+          )}
       </header>
       <main>{children}</main>
       {!home && (
