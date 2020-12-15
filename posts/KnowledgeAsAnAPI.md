@@ -1,5 +1,6 @@
 ---
 title: 'Knowledge as an API'
+description: 'Essay on the idea of treating knowledge and domain expertise as an API.'
 date: '2020-11-15'
 ---
 

@@ -5,6 +5,9 @@ import Head from "next/head";
 import utilStyles from "../../styles/utils.module.css";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import RemarkMathPlugin from 'remark-math';
+import { BlockMath, InlineMath } from 'react-katex';
+
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -32,6 +35,9 @@ export default function Post({ postData }) {
     <Layout>
       <Head>
         <title>{postData.title}</title>
+        <meta name="description" content={postData.description} />
+        <meta name="twitter:title" content={postData.title} />
+        <meta name="twitter:description" content={postData.description} />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>
@@ -39,9 +45,14 @@ export default function Post({ postData }) {
           <Date dateString={postData.date} />
         </div>
         <ReactMarkdown
+          plugins={[RemarkMathPlugin]}
           source={postData.content}
           allowDangerousHtml={false}
-          renderers={{ code: CodeBlock }}
+          renderers={{
+            code: CodeBlock,
+            math: ({ value }) => <BlockMath>{`${value}`}</BlockMath>,
+            inlineMath: ({ value }) => <InlineMath>{`${value}`}</InlineMath>
+          }}
         />
       </article>
     </Layout>
