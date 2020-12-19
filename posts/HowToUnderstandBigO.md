@@ -4,7 +4,7 @@ description: 'A practical explanation of Big O with code examples.'
 date: '2020-12-13'
 ---
 
-The other I was asked for "The simplest, quickest, easiest to understand explanation of Big O notation as it relates to programming". This blog post is my answer.
+I was recently asked for "The simplest, quickest, easiest to understand explanation of Big O notation as it relates to programming". This blog post is my answer.
 
 Big O notation (example: $O(n))$ is a notation used to describe the time it takes code (example: a function) to execute on a given input (example: an array of integers). A fancy term often used to describe the time it takes code to execute is "time complexity". If you come across the term "time complexity", think "The speed of the code".
 
