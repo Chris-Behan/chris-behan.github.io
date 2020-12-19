@@ -327,7 +327,7 @@ function base2Log(num) {
 }
 ```
 
-The `base2LogList` function returns the base 2 logarithms for a list of numbers. For example `base2LogList([2,4,8,16])` would return `[1, 2, 3, 4]`. The time complexity of this function is $O(n\ lg\ m)$, where $n$ is the *length* of `nums` and where $m$ is the largest number in `nums`. 
+The `base2LogList` function returns the base 2 logarithms for a list of numbers. For example, `base2LogList([2,4,8,16])` would return `[1, 2, 3, 4]`. The time complexity of this function is $O(n\ lg\ m)$, where $n$ is the *length* of `nums` and where $m$ is the largest number in `nums`. 
 
 This example introduces two new concepts:
 
