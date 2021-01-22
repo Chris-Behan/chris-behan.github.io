@@ -50,7 +50,7 @@ For example, say we have a Geometry API that utilizes the Arithmetic API's `addi
 import {addition, multiplication} from "Arithmetic"
 
 /**
-Returns the permieter of a rectangle.
+Returns the perimeter of a rectangle.
 */
 function rectanglePerimeter(length, width) {
     return multiplication(2,(addition(length,width)));
