@@ -1,6 +1,6 @@
 ---
 title: 'Software Engineering for Parents'
-description: 'An explanation of software engineering for Moms.'
+description: 'An explanation of software engineering for Parents.'
 date: '2021-03-13'
 ---
 Is your son or daughter a software engineer and you have no idea what they do?
