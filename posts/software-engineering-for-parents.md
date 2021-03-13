@@ -19,7 +19,7 @@ To solve this problem, the civil engineer builds a bridge.
 But before they build the bridge, they need to design it.
 Is the bridge a pedestrian bridge or a road bridge?
 If it's a road bridge, how many lanes should it have?
-In the design phase, the Civil engineer defines *what* they need to build and *how* they are going to build it.
+In the design phase, the civil engineer defines *what* they need to build and *how* they are going to build it.
 Once the design is complete, the civil engineer works with various contractors to build the bridge.
 But the work is not done when the bridge is complete, the civil engineer needs to ensure that the bridge continues to be safe for long after its built.
 They do this by performing regular safety checks on the bridge, repairing it if any issues arise.
