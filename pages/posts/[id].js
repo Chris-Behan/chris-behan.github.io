@@ -7,6 +7,8 @@ import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import RemarkMathPlugin from 'remark-math';
 import { BlockMath, InlineMath } from 'react-katex';
+import { useEffect } from 'react'
+import { pageView } from '../../lib/analytics'
 
 
 export async function getStaticPaths() {
@@ -31,6 +33,11 @@ const CodeBlock = ({ language, value }) => {
 };
 
 export default function Post({ postData }) {
+  // Log page view
+  useEffect(() => {
+    postData.id
+  }, [])
+
   return (
     <Layout>
       <Head>
@@ -38,6 +45,15 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.description} />
         <meta name="twitter:title" content={postData.title} />
         <meta name="twitter:description" content={postData.description} />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSBEQSV3P3"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-XSBEQSV3P3');
+          `}} />
       </Head>
       <article>
         <h1 className={utilStyles.headingXl}>{postData.title}</h1>

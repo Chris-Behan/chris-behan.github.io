@@ -18,6 +18,15 @@ export default function Home({ allPostsData }) {
   return (
     <Layout home>
       <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-XSBEQSV3P3"></script>
+        <script dangerouslySetInnerHTML={{
+          __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-XSBEQSV3P3');
+          `}} />
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
