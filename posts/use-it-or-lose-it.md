@@ -1,6 +1,6 @@
 ---
 title: "Use it or lose it"
-description: "Ruminations on a peculiar question."
+description: "My thoughts on one life's greatest tragedies and the opportunity it presents."
 date: "2021-06-21"
 ---
 
