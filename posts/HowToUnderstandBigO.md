@@ -18,7 +18,7 @@ function addOne(n) {
 
 To illustrate what I mean by *"does not change"*, consider the above function, it does not matter when the function is called, `addOne(n)`will always return n + 1. 
 
-As it relates to programming, we use Big O notation to describe the speed of a piece of code (usually a function). The most common Big O notations, in ascending order of speed, are `O(1), O(lg n), O(n), O(n lg n), and O(n^2)`.
+As it relates to programming, we use Big O notation to describe the speed of a piece of code (usually a function). The most common Big O notations, in descending order of speed, are `O(1), O(lg n), O(n), O(n lg n), and O(n^2)`.
 
 I am going to describe each of the common notations with a coding example. The examples are ordered by ease of understanding, not speed. 
 
