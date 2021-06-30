@@ -4,6 +4,8 @@ description: "Similarities between good writing and good code."
 date: "2021-06-28"
 ---
 
+Good writing is like good code, it's simple, efficient, and structured. Conversely, bad writing resembles bad code. It's unnecessarily complex, inefficient with the reader's memory, and structured like a bowl of spaghetti.
+
 ## Good writing is simple
 
 [As a drunken Developer](https://www.reddit.com/r/ExperiencedDevs/comments/nmodyl/drunk_post_things_ive_learned_as_a_sr_engineer/) once said: "Good code is code that can be understood by a junior engineer. Great code can be understood by a first-year CS freshman. The best code is no code at all." Writing is similar. You should strive to use the simplest words that get the point across. Novice writers use big words to hide their own lack of understanding, similar to how novice programmers use frameworks. You don't need React for your landing page, and you don't need to use the word "sesquipdealian" to describe something long. Strive to make you're writing as fluff-free as possible. If something in your writing doesn't need to be said, don't say it. This is the writer's equivalent of "the best code is no code at all".
