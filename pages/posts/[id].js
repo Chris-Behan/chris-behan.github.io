@@ -8,8 +8,7 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import RemarkMathPlugin from 'remark-math';
 import { BlockMath, InlineMath } from 'react-katex';
 import { useEffect } from 'react'
-import { pageView } from '../../lib/analytics'
-
+import { SignupForm } from "../../components/SignupForm";
 
 export async function getStaticPaths() {
   const paths = getAllPostIds();
@@ -71,6 +70,7 @@ gtag('config', 'G-XSBEQSV3P3');
           }}
         />
       </article>
+      <SignupForm />
     </Layout>
   );
 }

@@ -4,6 +4,7 @@ import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/date";
+import { SignupForm } from "../components/SignupForm";
 
 export async function getStaticProps() {
   const allPostsData = getSortedPostsData();
@@ -69,6 +70,7 @@ gtag('config', 'G-XSBEQSV3P3');
             </li>
           ))}
         </ul>
+        <SignupForm />
       </section>
     </Layout>
   );

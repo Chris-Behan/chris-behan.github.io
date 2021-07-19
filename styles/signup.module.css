@@ -1,0 +1,33 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
+  max-width: 350px;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.subscribeButton {
+  display:inline-block;
+  padding:0.35em 1.2em;
+  border:0.1em solid #000000;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#000000;
+  background-color: white;
+  text-align:center;
+  transition: all 0.2s;
+}
+.subscribeButton:hover{
+  color:#ffffff;
+  background-color:#000000;
+}
