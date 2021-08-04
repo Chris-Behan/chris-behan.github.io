@@ -44,9 +44,13 @@ gtag('config', 'G-XSBEQSV3P3');
       <section className={utilStyles.headingSm}>
         <p className={utilStyles.introText}>
           I would describe myself as a passionate neurotic who struggles with
-          moderation. I currently transform data for{" "}
+          moderation. I previously worked at{" "}
           <a href="https://aws.amazon.com/" className={utilStyles.orangeAnchor}>
             AWS
+          </a>{" "}
+          and I currently work at{" "}
+          <a href="https://www.ada.cx/" className={utilStyles.pink}>
+            Ada
           </a>
           . Technology fascinates me. I believe there is no difference between
           magic and enough layers of abstraction. I spend too much time
