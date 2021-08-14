@@ -1,7 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-import utilStyles from "../styles/utils.module.css";
 import { getSortedPostsData } from "../lib/posts";
 import Date from "../components/date";
 import { SignupForm } from "../components/SignupForm";
@@ -36,45 +35,59 @@ gtag('config', 'G-XSBEQSV3P3');
         />
         <title>{siteTitle}</title>
       </Head>
-      <section className={utilStyles.headingMd}>
-        <p className={utilStyles.centerText}>
-          Communicator and Data Transformer.
+      <section>
+        <p class="text-2xl text-center my-3">
+          Communicator and Data Transformer
         </p>
       </section>
-      <section className={utilStyles.headingSm}>
-        <p className={utilStyles.introText}>
+      <section>
+        <p class="text-lg">
           I would describe myself as a passionate neurotic who struggles with
           moderation. I previously worked at{" "}
-          <a href="https://aws.amazon.com/" className={utilStyles.orangeAnchor}>
+          <a
+            href="https://aws.amazon.com/"
+            class="text-yellow-500 hover:underline"
+          >
             AWS
           </a>{" "}
-          and I currently work at{" "}
-          <a href="https://www.ada.cx/" className={utilStyles.pink}>
+          and currently work at{" "}
+          <a href="https://www.ada.cx/" class="text-pink-400 hover:underline">
             Ada
           </a>
-          . Technology fascinates me. I believe there is no difference between
-          magic and enough layers of abstraction. I spend too much time
-          pondering philosophical questions. I love to both play and watch
-          basketball (<a href="https://www.nba.com/thunder/">Thunder up!</a>).{" "}
+          . Technology fascinates me. I love to both play and watch basketball (
           <a
-            className={utilStyles.redAnchor}
+            class="text-blue-500 hover:underline"
+            href="https://www.nba.com/thunder/"
+          >
+            Thunder up!
+          </a>
+          ). My favorite book is{" "}
+          <a
+            class="text-yellow-700 hover:underline"
+            href="https://davidgoggins.com/book/"
+          >
+            Can't Hurt Me by David Goggins
+          </a>{" "}
+          and my favorite band is{" "}
+          <a
+            class="text-red-600 hover:underline"
             href="https://open.spotify.com/album/4wExFfncaUIqSgoxnqa3Eh?si=UmkV7iSCRZuob0szOKBohA"
           >
             Led Zeppelin
-          </a>{" "}
-          is my favorite band of all time.
+          </a>
+          .
         </p>
       </section>
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>Posts</h2>
-        <ul className={utilStyles.list}>
+      <section class="p-2">
+        <h2 class="text-3xl my-4 font-extrabold">Posts</h2>
+        <ul class="list-none p-0">
           {allPostsData.map(({ id, date, title }) => (
-            <li className={utilStyles.listItem} key={id}>
+            <li class="my-4" key={id}>
               <Link href={`/posts/${id}`}>
-                <a>{title}</a>
+                <a class="text-xl text-blue-500 hover:underline">{title}</a>
               </Link>
               <br />
-              <small className={utilStyles.lightText}>
+              <small class="text-gray-400">
                 <Date dateString={date} />
               </small>
             </li>

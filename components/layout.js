@@ -8,7 +8,7 @@ export const siteTitle = "Chris Behan";
 
 export default function Layout({ children, home }) {
   return (
-    <div className={styles.container}>
+    <div class="max-w-2xl px-4 mx-auto my-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Personal website of chris behan" />
@@ -20,20 +20,21 @@ export default function Layout({ children, home }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@behan_chris" />
       </Head>
-      <header className={styles.header}>
+      <header>
         {home ? (
           <>
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            <h1 class="text-5xl text-center font-extrabold my-3 text-black">
+              {name}
+            </h1>
           </>
         ) : (
           <>
             <Link href="/">
-              <a>
-              </a>
+              <a></a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            <h2 class="text-2xl text-center font-extrabold my-3 hover:underline">
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a class="text-black">{name}</a>
               </Link>
             </h2>
           </>
@@ -41,9 +42,9 @@ export default function Layout({ children, home }) {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div>
           <Link href="/">
-            <a>← Back to home</a>
+            <a class="text-blue-500 hover:underline">← Back to home</a>
           </Link>
         </div>
       )}
