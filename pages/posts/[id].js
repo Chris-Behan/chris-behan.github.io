@@ -2,7 +2,7 @@ import Layout from "../../components/layout";
 import { getAllPostIds, getPostData } from "../../lib/posts";
 import Date from "../../components/date";
 import Head from "next/head";
-import utilStyles from "../../styles/utils.module.css";
+// import utilStyles from "../../styles/utils.module.css";
 import ReactMarkdown from "react-markdown";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import RemarkMathPlugin from "remark-math";
@@ -60,9 +60,11 @@ gtag('config', 'G-XSBEQSV3P3');
           }}
         />
       </Head>
-      <article>
-        <h1 className={utilStyles.headingXl}>{postData.title}</h1>
-        <div className={utilStyles.lightText}>
+      <article class="text-lg">
+        <h1 class="text-4xl font-extrabold my-3 text-center">
+          {postData.title}
+        </h1>
+        <div class="text-gray-400 my-4">
           <Date dateString={postData.date} />
         </div>
         <ReactMarkdown
@@ -76,7 +78,7 @@ gtag('config', 'G-XSBEQSV3P3');
           }}
         />
       </article>
-      <hr></hr>
+      <hr class="mt-4"></hr>
       <SignupForm />
     </Layout>
   );

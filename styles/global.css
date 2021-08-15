@@ -1,4 +1,39 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  p {
+    @apply my-3;
+  }
+  a {
+    @apply text-blue-500;
+    @apply hover:underline;
+  }
+
+  h1 {
+    @apply text-3xl;
+    @apply font-bold;
+  }
+  h2 {
+    @apply text-2xl;
+    @apply font-bold;
+  }
+  h3 {
+    @apply text-xl;
+    @apply font-bold;
+  }
+  ol {
+    @apply list-decimal;
+    @apply pl-10;
+  }
+  ul {
+    @apply list-disc;
+    @apply pl-10;
+  }
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -24,4 +59,4 @@ a:hover {
 img {
   max-width: 100%;
   display: block;
-}
+} */
