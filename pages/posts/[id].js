@@ -1,17 +1,20 @@
 import Layout from "../../components/layout";
-import { getAllPostIds, getPostData } from "../../lib/posts";
+import path from "path"
+import { Posts } from "../../lib/posts";
 import Date from "../../components/date";
 import Head from "next/head";
-// import utilStyles from "../../styles/utils.module.css";
-import ReactMarkdown from "react-markdown";
+import ReactMarkdown from "react-markdown/with-html";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import RemarkMathPlugin from "remark-math";
 import { BlockMath, InlineMath } from "react-katex";
 import { useEffect } from "react";
 import { SignupForm } from "../../components/SignupForm";
 
+const postsDirectory = path.join(process.cwd(), "posts");
+const posts = new Posts(postsDirectory);
+
 export async function getStaticPaths() {
-  const paths = getAllPostIds();
+  const paths = posts.getAllPostIds();
   return {
     paths,
     fallback: false,
@@ -19,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const postData = await getPostData(params.id);
+  const postData = await posts.getPostData(params.id);
   return {
     props: {
       postData,
@@ -36,6 +39,7 @@ export default function Post({ postData }) {
   useEffect(() => {
     postData.id;
   }, []);
+  const defaultImg = "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/wpg.jpg"
 
   return (
     <Layout>
@@ -44,6 +48,10 @@ export default function Post({ postData }) {
         <meta name="description" content={postData.description} />
         <meta name="twitter:title" content={postData.title} />
         <meta name="twitter:description" content={postData.description} />
+        {postData.image
+          ? <meta property="og:image" content={postData.image} />
+          : <meta property="og:image" content={defaultImg} />
+        }
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-XSBEQSV3P3"
@@ -70,7 +78,7 @@ gtag('config', 'G-XSBEQSV3P3');
         <ReactMarkdown
           plugins={[RemarkMathPlugin]}
           source={postData.content}
-          allowDangerousHtml={false}
+          allowDangerousHtml={true}
           renderers={{
             code: CodeBlock,
             math: ({ value }) => <BlockMath>{`${value}`}</BlockMath>,

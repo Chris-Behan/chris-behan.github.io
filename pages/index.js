@@ -1,12 +1,15 @@
 import Head from "next/head";
 import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
-import { getSortedPostsData } from "../lib/posts";
+import path from "path";
+import { Posts } from "../lib/posts";
 import Date from "../components/date";
 import { SignupForm } from "../components/SignupForm";
 
 export async function getStaticProps() {
-  const allPostsData = getSortedPostsData();
+  const postsDir = path.join(process.cwd(), "posts");
+  const posts = new Posts(postsDir)
+  const allPostsData = posts.getSortedPostsData();
   return {
     props: {
       allPostsData,
