@@ -12,10 +12,6 @@ export default function Layout({ children, home }) {
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Personal website of chris behan" />
-        <meta
-          property="og:image"
-          content="https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/wpg.jpg"
-        />
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@behan_chris" />
