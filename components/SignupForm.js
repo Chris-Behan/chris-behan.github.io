@@ -2,10 +2,7 @@ import React, { useEffect, useState } from "react";
 import styles from "../styles/signup.module.css";
 
 export function SignupForm() {
-  const mailChimpURL =
-    "https://chrisbehan.us6.list-manage.com/subscribe/post?u=0b20b88aeb38038fee452a64e&amp;id=ef13d3d07a";
-  const mailChimpUser = "0b20b88aeb38038fee452a64e";
-  const mailChimpID = "ef13d3d07a";
+  const sendInBlueAction = "https://97afcce2.sibforms.com/serve/MUIEAFn3FZzUf7t-OKK-YuxOzBVWrigWMnUU0m0uDnAhLANE9V7_mvearUT3JDq7ek3460GOlt9xsdTbIFxJzQhTODT3ng3hCJDSn5VKJHIpeSIemdm_WIjVe35TlQjTONLxRfgbB_M5FZoZUH9mTNP6mI4aDKVhqYx8SaHUDsmEWzOMEVwluujbKxN-PRrhUa2CK8QrQkr_o0ve"
   const [email, setEmail] = useState("");
   return (
     <div className={styles.container}>
@@ -14,17 +11,16 @@ export function SignupForm() {
       </p>
       <form
         className={styles.signupForm}
-        action={mailChimpURL}
+        action={sendInBlueAction}
         method="POST"
+        datatype="subscription"
         noValidate
       >
-        <input type="hidden" name="u" value={mailChimpUser} />
-        <input type="hidden" name="id" value={mailChimpID} />
         <input
           type="email"
           name="EMAIL"
           placeholder="Email"
-          id="email"
+          id="EMAIL"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           autoCapitalize="off"
