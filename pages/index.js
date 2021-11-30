@@ -45,40 +45,8 @@ gtag('config', 'G-XSBEQSV3P3');
       </section>
       <section>
         <p class="text-lg">
-          I would describe myself as a passionate neurotic who struggles with
-          moderation. I previously worked at{" "}
-          <a
-            href="https://aws.amazon.com/"
-            class="text-yellow-500 hover:underline"
-          >
-            AWS
-          </a>{" "}
-          and currently work at{" "}
-          <a href="https://www.ada.cx/" class="text-pink-400 hover:underline">
-            Ada
-          </a>
-          . Technology fascinates me. I love to both play and watch basketball (
-          <a
-            class="text-blue-500 hover:underline"
-            href="https://www.nba.com/thunder/"
-          >
-            Thunder up!
-          </a>
-          ). My favorite book is{" "}
-          <a
-            class="text-yellow-700 hover:underline"
-            href="https://davidgoggins.com/book/"
-          >
-            Can't Hurt Me by David Goggins
-          </a>{" "}
-          and my favorite band is{" "}
-          <a
-            class="text-red-600 hover:underline"
-            href="https://open.spotify.com/album/4wExFfncaUIqSgoxnqa3Eh?si=UmkV7iSCRZuob0szOKBohA"
-          >
-            Led Zeppelin
-          </a>
-          .
+          Passionate neurotic struggling with
+          moderation. I try to say things when I talk.{" "}
         </p>
       </section>
       <section class="p-2">
