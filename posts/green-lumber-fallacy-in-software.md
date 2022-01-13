@@ -1,5 +1,5 @@
 ---
-title: "The Green Lumber Fallacy in Software Engineering"
+title: "Green Lumber Fallacy in Software Engineering"
 description: "Distinguishing the trees from the forest in software engineering and how not to conduct interviews."
 date: "2022-01-13"
 image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/green_trees.jpg"
