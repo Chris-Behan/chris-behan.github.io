@@ -1,5 +1,5 @@
 ---
-title: "How Not To Change Someones Mind"
+title: "How Not To Change Someone's Mind"
 description: "Four simple tactics to ensure someone doesn't change their mind."
 date: "2022-04-11"
 image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/cactus.jpg"
