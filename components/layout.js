@@ -8,7 +8,7 @@ export const siteTitle = "Chris Behan";
 
 export default function Layout({ children, home }) {
   return (
-    <div class="max-w-2xl px-4 mx-auto my-8">
+    <div class="max-w-3xl px-4 mx-auto my-8">
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta name="description" content="Personal website of chris behan" />
@@ -19,20 +19,13 @@ export default function Layout({ children, home }) {
       <header>
         {home ? (
           <>
-            <h1 class="text-5xl text-center font-extrabold my-3 text-black">
+            <h1 class="text-6xl text-center font-extrabold my-3 text-black">
               {name}
             </h1>
           </>
         ) : (
           <>
-            <Link href="/">
-              <a></a>
-            </Link>
-            <h2 class="text-2xl text-center font-extrabold my-3 hover:underline">
-              <Link href="/">
-                <a class="text-black">{name}</a>
-              </Link>
-            </h2>
+
           </>
         )}
       </header>

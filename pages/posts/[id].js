@@ -68,8 +68,8 @@ gtag('config', 'G-XSBEQSV3P3');
           }}
         />
       </Head>
-      <article class="text-lg">
-        <h1 class="text-4xl font-extrabold my-3 text-center">
+      <article class="text-xl">
+        <h1 class="text-5xl font-extrabold my-3 text-center">
           {postData.title}
         </h1>
         <div class="text-gray-400 my-4">
