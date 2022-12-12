@@ -4,7 +4,10 @@ description: "Why you shouldn't get ChatGPT to do your homework."
 date: "2022-12-11"
 image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/lensa.jpeg"
 ---
-Times are changing. Everyone and their dog now has access to generative AI models that can produce incredible art and pretty good literature in a matter of seconds. We’re experiencing the TikTokification of intellectual work in real time. And the result will be a convergence of content towards a melting pot of similarity.
+Times are changing.
+Everyone and their dog now has access to generative AI models that can produce incredible art and pretty good literature in a matter of seconds.
+We’re experiencing the TikTokification of intellectual work in real time.
+And the result will be a convergence of content towards a melting pot of similarity.
 Generative models vastly reduce the number of inputs that go into the creative process.
 Instead of having to think about each sentence and how it contributes to the idea of the paragraph, or how that paragraph flows into the next, you simply ask the model to write you an article on why X is better than Y.
 The model then searches a giant set of data, looking for information on X and Y, along with examples of writing that compares 2 things, then it outputs the result.
@@ -30,7 +33,7 @@ And one of the greatest difficulties you face is the temptation to avoid difficu
 A temptation that's becoming easier than ever to fulfill with the emergence of technologies that do the work for you.
 
 Right now, it's especially important to neglect the idea that "there are no points for difficulty".
-To avoid being the founder that creates one of 10,000 non-differentiable ChatGPT startups. 
-To avoid being the artist that abandons their pursuit of drawing to become a “Prompter” for DALL-E 2. 
-To avoid being the writer that off-loads their ability to write, and thus think, to ChatGPT. 
+To avoid being the founder that creates one of 10,000 non-differentiable ChatGPT startups.
+To avoid being the artist that abandons their pursuit of drawing to become a “Prompter” for DALL-E 2.
+To avoid being the writer that off-loads their ability to write, and thus think, to ChatGPT.
 In a time where it’s never been easier to avoid difficulty, the differentiator will be your ability to embrace it.
