@@ -4,10 +4,9 @@ description: "Why you shouldn't get ChatGPT to do your homework."
 date: "2022-12-11"
 image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/lensa.jpeg"
 ---
-Times are changing. Everyone and their dog now has access to generative AI models that can produce incredible art and pretty good literature in a matter of seconds. We’re experiencing the TikTokification of intellectual work in real time. And the result will be a convergence of content towards a melting pot of similarity. 
+Times are changing. Everyone and their dog now has access to generative AI models that can produce incredible art and pretty good literature in a matter of seconds. We’re experiencing the TikTokification of intellectual work in real time. And the result will be a convergence of content towards a melting pot of similarity.
 Generative models vastly reduce the number of inputs that go into the creative process.
-Instead of having to think about each sentence and how it contributes to the idea of the paragraph, or how that paragraph flows into the next,
-you simply ask the model to write you an article on why X is better than Y.
+Instead of having to think about each sentence and how it contributes to the idea of the paragraph, or how that paragraph flows into the next, you simply ask the model to write you an article on why X is better than Y.
 The model then searches a giant set of data, looking for information on X and Y, along with examples of writing that compares 2 things, then it outputs the result.
 Done.
 The problem is, when you had to write each sentence yourself, the likelihood of you writing the same thing as someone else was very small.
@@ -19,7 +18,7 @@ But if you put the same 100 writers in the room and tell them to use [ChatGPT](h
 "There are no points for difficulty" is a piece of advice that recommends sticking to your strengths and avoiding your weaknesses.
 It promotes taking the easier, more efficient path, whenever possible and views difficulty as inherently bad.
 It's the line of thinking that high schoolers use to rationalize writing their essays with ChatGPT.
-It's a piece of advice would recommend using [DALLE-2](https://openai.com/dall-e-2/) instead of a paintbrush and canvas.
+It's a piece of advice that would recommend using [DALLE-2](https://openai.com/dall-e-2/) instead of a paintbrush and canvas.
 There are no points for difficulty if you believe all that matters is the outcome and not your ability to produce that outcome.
 It's the results-obsessed reasoning that's so prevalent in media, social and otherwise, that gives disproportionate attention to a model's 6-pack or a CEO's multi-billion dollar exit while skipping over the process that led to those results.
 But there are points for difficulty.
