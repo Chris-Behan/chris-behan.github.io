@@ -2,7 +2,7 @@
 title: "Neomania"
 description: "The developer urge to use the shiny new thing."
 date: "2022-12-24"
-image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/lensa.jpeg"
+image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/spaceship.jpeg"
 ---
 Programmers love to use new technologies. They get a hit of dopamine from reading shiny new documentation and trying out new programming languages. They think of themselves as pioneers, using new tools as their competitive advantage over the less adaptable competition. “Those boring old programmers, not using this new tool, don’t stand a chance,” they think to themselves while grinning into their ultra-wide 4k monitors. Old tools remind them of their grandparents, slow and set in their ways. Doing what everyone else does goes against their desire to stand out from the crowd, to be the hidden gem, the David to the mainstream’s Goliath. Their desire to use the shiny new thing is strong. So strong, that it overrides their ability to evaluate it objectively.
 
