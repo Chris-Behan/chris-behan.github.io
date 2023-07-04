@@ -1,5 +1,5 @@
 ---
-title: "Neomania"
+title: "Neomania in Software"
 description: "The developer urge to use the shiny new thing."
 date: "2022-12-24"
 image: "https://raw.githubusercontent.com/Chris-Behan/chris-behan.github.io/master/public/images/spaceship.jpeg"
